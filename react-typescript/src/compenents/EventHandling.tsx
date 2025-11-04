@@ -1,7 +1,7 @@
 import React,{useState} from 'react'
 
 interface IState {
-    message:  string
+    message: string
 }
 
 const EventHandling:React.FC = () => {
