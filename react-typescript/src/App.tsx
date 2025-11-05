@@ -1,10 +1,11 @@
 // import Funcomp from "./compenents/Funcomp"
 import './App.css'
+import UserAPI from './compenents/UserAPI'
 // import ConditionalRender from './compenents/ConditionalRender'
 // import Counter from "./compenents/counter"
 // import EventHandling from './compenents/EventHandling'
 // import Form from './compenents/form'
-import Looping from './compenents/Looping'
+// import Looping from './compenents/Looping'
 
 function App() {
 
@@ -16,7 +17,8 @@ function App() {
       {/* <EventHandling/> */}
       {/* <Form/> */}
       {/* <ConditionalRender/> */}
-      <Looping/>
+      {/* <Looping/> */}
+      <UserAPI/>
     </div>
   )
 }
