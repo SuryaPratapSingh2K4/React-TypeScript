@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import type { IUsers } from '../modals/IUser';
+import { Link } from 'react-router-dom';
 
 interface Iuser{
     loading: boolean,
@@ -53,6 +54,7 @@ const UserAPI:React.FC = () => {
                     </thead>
                     <tbody>
                         {state.users.map((u) => (
+                            <Link to={`user/${u.id}`}>
                             <tr key={u.id}>
                                 <td>{u.id}</td>
                                 <td>{u.name}</td>
@@ -61,6 +63,7 @@ const UserAPI:React.FC = () => {
                                 <td>{u.address.city}</td>
                                 <td>{u.phone}</td>
                             </tr>
+                            </Link>
                         ))}
                     </tbody>
                 </table>

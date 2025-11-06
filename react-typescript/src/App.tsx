@@ -1,5 +1,6 @@
 // import Funcomp from "./compenents/Funcomp"
 import './App.css'
+import EachUser from './compenents/EachUser'
 import Looping from './compenents/Looping'
 import Navbar from './compenents/Navbar'
 import UserAPI from './compenents/UserAPI'
@@ -17,6 +18,7 @@ function App() {
       <Navbar/>
       <Routes>
         <Route path='/' element={<UserAPI/>}/>
+        <Route path='/user/:id' element={<EachUser/>}/>
         <Route path='/form' element={<Form/>}/>
         <Route path='/loop' element={<Looping/>}/>
       </Routes>
